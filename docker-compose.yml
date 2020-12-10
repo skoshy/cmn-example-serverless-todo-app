@@ -1,0 +1,14 @@
+version: "3"
+services:
+  web:
+    build: .
+    ports:
+      - "${PORT}:${PORT}"
+    env_file: .env
+    volumes:
+      - "./:${PATH_MOUNT}"
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge
