@@ -7,7 +7,7 @@
     "help": "env-cmd gulp help",
     "start": "env-cmd gulp start",
     "dev": "env-cmd gulp dev",
-    "build": "env-cmd gulp build",
+    "build": "env-cmd --no-override gulp build",
     "httpServe": "env-cmd gulp httpServe",
     "test": "jest src/*",
     "gulp": "env-cmd gulp",
