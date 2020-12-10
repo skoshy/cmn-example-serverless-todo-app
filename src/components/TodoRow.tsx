@@ -1,5 +1,5 @@
 import "twin.macro"; // include when using tw prop, @TODO: maybe make an eslint plugin for this?
-import { Modal, Button, Grid, Heading, Select, TextInput } from "src/components/_lib_";
+import { Grid, TextInput } from "src/components/_lib_";
 import { useStoreActions } from "src/models";
 
 
@@ -11,7 +11,7 @@ export const TodoRow = ({ todo }) => {
       editTodo([todo.id, { id: todo.id, is_complete: !todo.is_complete }])
     }} />
     <TextInput inputProps={{ className: todo.is_complete ? 'line-through' : '' }} value={todo.task} onChange={e => {
-      editTodo([todo.id, { id: todo.id, task: e.target.value }])
+      editTodo([todo.id, { id: todo.id, task: (e.target as HTMLInputElement).value }])
     }} />
   </Grid>;
 };

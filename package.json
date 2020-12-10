@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate-nextjs",
+  "name": "cmn-example-serverless-todo-app",
   "version": "0.1.0",
-  "repository": "git@github.com:skoshy/boilerplate-nextjs.git",
+  "repository": "git@github.com:skoshy/cmn-example-serverless-todo-app.git",
   "author": "Stefan Koshy <noreply@skoshy.com>",
   "scripts": {
     "help": "env-cmd gulp help",
@@ -14,7 +14,6 @@
     "lint": "eslint",
     "lint:errors": "eslint \"src/**/*.tsx\" \"src/**/*.ts\" \"src/**/*.jsx\" \"src/**/*.js\" --quiet --no-error-on-unmatched-pattern",
     "prettier": "prettier . --ignore-path .gitignore --write",
-    "docker:start": "docker-compose build && docker-compose up",
     "postbuild": "next-on-netlify",
     "postinstall": "gulp postInstall --silent"
   },

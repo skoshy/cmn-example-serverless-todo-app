@@ -4,10 +4,10 @@ import { keyBy, debounce } from 'lodash';
 import { deleteTodo, getTodos, upsertTodo } from "src/api";
 import { StoreTypes } from "src/types";
 
-const createNewTodo = ({ id = '', task = '', is_completed = false }): StoreTypes.Todo => ({
+const createNewTodo = ({ id = '', task = '', is_complete = false }): StoreTypes.Todo => ({
   id,
   task,
-  is_completed,
+  is_complete,
 })
 
 const debounced = {

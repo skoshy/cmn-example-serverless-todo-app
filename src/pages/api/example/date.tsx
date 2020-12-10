@@ -1,3 +1,5 @@
+/* Example of SSR */
+
 export default function handler(req, res): void {
   res.setHeader("Content-Type", "application/json");
   res.statusCode = 200;

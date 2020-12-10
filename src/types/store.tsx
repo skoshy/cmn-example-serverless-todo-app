@@ -3,7 +3,7 @@ import { Action, Thunk } from "easy-peasy";
 export interface Todo {
   id: string;
   task: string;
-  is_completed: boolean;
+  is_complete: boolean;
 }
 
 export interface LoginModel {
