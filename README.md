@@ -70,3 +70,4 @@ Here's what you have to do to enable this:
 - Then in your Github repo, add a new secret with name `NETLIFY_AUTH_TOKEN`. The URL to do this is https://github.com/skoshy/cmn-example-serverless-todo-app/settings/secrets/new - substitute your username and repo.
 - In Netlify, find your site's API ID (try checking https://app.netlify.com/sites/cmn-example-serverless-todo-app/settings/general, substitute appropriately). You must put this as a secret in Github like above with name `NETLIFY_SITE_ID`.
 - That should be it! Now every time your code is pushed to master, it should auto-deploy to Netlify!
+
